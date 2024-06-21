@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 88vh;
+  gap: var(--mantine-spacing-lg);
+  padding-right: 0;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    height: 82vh;
+  }
+
+  .content,
+  .searchbox {
+    padding-right: var(--mantine-spacing-md);
+  }
+}

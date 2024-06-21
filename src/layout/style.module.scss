@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--mantine-spacing-sm);
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: var(--mantine-spacing-sm);
+}
+
+.logo {
+  gap: 0;
+}
+
+.navbar {
+  .season_filter {
+    font-size: var(--mantine-font-size-md);
+    font-weight: 700;
+  }
+  .weather_filter {
+    font-size: var(--mantine-font-size-md);
+    font-weight: 700;
+    margin-bottom: var(--mantine-spacing-sm);
+  }
+}

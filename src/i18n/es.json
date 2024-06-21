@@ -1,0 +1,27 @@
+{
+  "translation": {
+    "app.title": "Bundle tracker",
+    "app.version": "Versión: <code>{{version}}</code>",
+    "lang.es": "Español",
+    "lang.en": "English",
+    "lang.switch": "Cambiar idioma",
+    "theme.toggleColorScheme": "Cambiar esquema de colores",
+    "filter.season": "Temporada",
+    "filter.season.lastChance": "Última oportunidad",
+    "filter.season.lastChance.tooltip": "Última oportunidad de conseguir el artículo antes de que cambie la temporada.",
+    "filter.weather": "Clima",
+    "filter.weather.placeholder": "Selecciona un clima",
+    "filter.achivements.label": "Logros",
+    "weather.sun": "Soleado",
+    "weather.rain": "Lluvioso",
+    "weather.snow": "Nevado",
+    "weather.wind": "Ventoso",
+    "weather.storm": "Tormentoso",
+    "weather.green_rain": "Lluvia verde",
+    "season.spring": "Primavera",
+    "season.summer": "Verano",
+    "season.fall": "Otoño",
+    "season.winter": "Invierno",
+    "item.kind.brown": "Marrón"
+  }
+}

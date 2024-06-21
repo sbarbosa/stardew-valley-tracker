@@ -1,0 +1,28 @@
+{
+  "translation": {
+    "app.title": "Bundle tracker",
+    "app.version": "Versión: <code>{{version}}</code>",
+    "lang.es": "Español",
+    "lang.en": "English",
+    "lang.switch": "Switch language",
+    "theme.toggleColorScheme": "Switch color scheme",
+    "filter.season": "Season",
+    "filter.season.lastChance": "Last chance",
+    "filter.season.lastChance.tooltip": "Last chance to get the item before the season changes.",
+    "filter.weather": "Weather",
+    "filter.weather.placeholder": "Select weather",
+    "filter.achivements.label": "Achievements",
+    "filter.achivements.masterAngler": "Master Angler",
+    "weather.sun": "Sunny",
+    "weather.rain": "Rainy",
+    "weather.snow": "Snowy",
+    "weather.wind": "Windy",
+    "weather.storm": "Stormy",
+    "weather.green_rain": "Green rain",
+    "season.spring": "Spring",
+    "season.summer": "Summer",
+    "season.fall": "Autumn",
+    "season.winter": "Winter",
+    "item.kind.brown": "Brown"
+  }
+}
