@@ -4,7 +4,12 @@ export type Season = (typeof SEASON_LIST)[number];
 export const WEATHER_LIST = ["sun", "rain", "green_rain", "wind", "storm", "snow"] as const;
 export type Weather = (typeof WEATHER_LIST)[number];
 
-export type MultyLangText = Record<string, string>;
+export type Lang = "en" | "es";
+
+export type MultyLangText = {
+  en: string;
+  es: string;
+};
 
 export type ItemId =
   | "Wild_Horseradish"

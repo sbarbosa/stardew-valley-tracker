@@ -4,8 +4,10 @@ import type { PropsWithChildren } from "react";
 interface Props extends PropsWithChildren<BoxProps> {
 }
 
-export const Icon = ({ children, ...rest }: Props) => (
+const Icon = ({ children, ...rest }: Props) => (
   <Box {...rest}>
     {children}
   </Box>
 )
+
+export default Icon;

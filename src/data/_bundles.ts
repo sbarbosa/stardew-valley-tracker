@@ -17,6 +17,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Spring Foraging",
+          es: "Recolección Primavera",
         },
       },
       {
@@ -25,6 +26,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Spring Foraging, buy from Pierre at Flower Dance",
+          es: "Recolección en Primavera, adquirido de Pierre durante la Danza floral",
         },
       },
       {
@@ -33,6 +35,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Spring Foraging",
+          es: "Recolección en Primavera",
         },
       },
       {
@@ -41,6 +44,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Spring Foraging, buy from Pierre at Flower Dance",
+          es: "Recolección en Primavera, adquirido de Pierre durante la Danza floral",
         },
       },
     ],
@@ -66,6 +70,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Summer Foraging, Fall Farming",
+          es: "Recolección en Verano, Cultivo de Otoño",
         },
       },
       {
@@ -74,6 +79,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Summer Foraging, The Cave (fruit bat option)",
+          es: "Recolección en Verano, La Cueva de Granja (Opción de Murciélagos de la fruta)",
         },
       },
       {
@@ -82,6 +88,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Summer Foraging",
+          es: "Recolección en Verano",
         },
       },
     ],
@@ -107,6 +114,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Fall Foraging, Spring & Fall Foraging in the Secret Woods, The Cave (mushroom option), Tapper a Mushroom Tree",
+          es: "Recolección en Otoño, Recolección en Primavera y Otoño en el Bosque Secreto, La Cueva de Granja (Opción de Setas), Resinera en un Árbol seta",
         },
       },
       {
@@ -115,6 +123,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Fall Foraging, The Cave (fruit bat option)",
+          es: "Recolección en Otoño, La Cueva de Granja (Opción de Murciélagos de la fruta)",
         },
       },
       {
@@ -123,6 +132,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Fall Foraging",
+          es: "Recolección en Otoño",
         },
       },
       {
@@ -131,6 +141,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Fall Foraging, The Cave (fruit bat option)",
+          es: "Recolección en Otoño, La Cueva de Granja (Opción de Murciélagos de la fruta)",
         },
       },
     ],
@@ -156,6 +167,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Hoes soil or Artifact Spot in Winter, dropped by Blue Slimes on floors 41-79 of The Mines",
+          es: "Arando tierra o Lugares de Artefactos en Invierno, botín de Babas Azules en los pisos 41-79 de Las minas",
         },
       },
       {
@@ -164,6 +176,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Winter Foraging, dropped by Dust Sprite on floors 41-79 of The Mines",
+          es: "Recolección en Invierno, botín de Duendes del polvo en los pisos 41-79 de Las minas",
         },
       },
       {
@@ -172,6 +185,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Hoes soil or Artifact Spot in Winter",
+          es: "Arando tierra o Lugares de Artefactos en Invierno",
         },
       },
       {
@@ -180,6 +194,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Winter Foraging",
+          es: "Recolección en Invierno",
         },
       },
     ],
@@ -205,6 +220,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Chopping Trees or branches with an Axes, Carpenter's Shop",
+          es: "Talando Árboles o ramas con un Hacha, Carpintería",
         },
       },
       {
@@ -213,6 +229,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Chopping Trees or branches with an Axes, Carpenter's Shop",
+          es: "Talando Árboles o ramas con un Hacha, Carpintería",
         },
       },
       {
@@ -221,6 +238,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Smashing stones with a Pickaxes, Carpenter's Shop",
+          es: "Picando rocas con un Pico, Carpintería",
         },
       },
       {
@@ -229,6 +247,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Chopping Large Stump or Large Log with an upgraded Axes, smashing crates in The Mines, chopping Mahogany Tree",
+          es: "Talando Tocones grandes o Troncos grandes con un Hacha mejorada, rompiendo cajas en Las Minas",
         },
       },
     ],
@@ -254,6 +273,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "The Desert Foraging, Oasis, shaking a Palm Tree in The Desert and on Ginger Island",
+          es: "Recolección en El Desierto, Oasis",
         },
       },
       {
@@ -262,6 +282,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "The Desert Foraging, Oasis",
+          es: "Recolección en El Desierto, Oasis",
         },
       },
       {
@@ -270,6 +291,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "The Mines, either smashing boxes or Hoes soil",
+          es: "Las Minas, ya sea rompiendo cajas o arando tierra blanda",
         },
       },
       {
@@ -278,6 +300,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Foraging in The Mines, Summer or Fall Foraging in the Secret Woods, The Cave (mushroom option), Tapper a Mushroom Tree, Farm Maps in Fall.",
+          es: "Recolección en Las minas, Recolección en Verano u Otoño en el Bosque Secreto, La Cueva de Granja (Opción de Setas), Resinera en un Árbol seta, Granja Forestal en Otoño",
         },
       },
       {
@@ -286,6 +309,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "The Mines, The Cave (mushroom option), Farm Maps Foraging in Fall",
+          es: "Las Minas, La Cueva de Granja (Opción de Setas), Recolectando en la Granja Forestal en Otoño",
         },
       },
       {
@@ -294,6 +318,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Tapper Maple Tree",
+          es: "Resinera en un Arce",
         },
       },
       {
@@ -302,6 +327,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Tapper Oak Tree, Haunted Skull",
+          es: "Resinera en un Roble",
         },
       },
       {
@@ -310,6 +336,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Tapper Pine Tree",
+          es: "Resinera en un Pino",
         },
       },
       {
@@ -318,6 +345,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Foraging in the Secret Woods or Farm Maps in Spring, The Cave (mushroom option)",
+          es: "Recolección en el Bosque secreto o la Granja Forestal en Primavera, La Cueva de Granja (Opción de Setas)",
         },
       },
     ],
@@ -343,6 +371,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Spring Crops",
+          es: "Cultivo de Primavera",
         },
       },
       {
@@ -351,6 +380,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Spring Crops",
+          es: "Cultivo de Primavera",
         },
       },
       {
@@ -359,6 +389,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Spring Crops",
+          es: "Cultivo de Primavera",
         },
       },
       {
@@ -367,6 +398,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Spring Crops",
+          es: "Cultivo de Primavera",
         },
       },
     ],
@@ -392,6 +424,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Summer Crops",
+          es: "Cultivo de Verano",
         },
       },
       {
@@ -400,6 +433,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Summer Crops",
+          es: "Cultivo de Verano",
         },
       },
       {
@@ -408,6 +442,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Summer Crops",
+          es: "Cultivo de Verano",
         },
       },
       {
@@ -416,6 +451,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Summer Crops",
+          es: "Cultivo de Verano",
         },
       },
     ],
@@ -441,6 +477,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Summer / Fall Crops",
+          es: "Cultivo de Verano/Otoño",
         },
       },
       {
@@ -449,6 +486,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Fall Crops",
+          es: "Cultivo de Otoño",
         },
       },
       {
@@ -457,6 +495,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Fall Crops",
+          es: "Cultivo de Otoño",
         },
       },
       {
@@ -465,6 +504,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Fall Crops, dropped by Duggy on floors 6-29 of The Mines (3%)",
+          es: "Cultivo de Otoño, botín de Cavadorín en los pisos 6-29 de Las Minas (3%)",
         },
       },
     ],
@@ -490,6 +530,7 @@ const BUNDLES: Bundle[] = [
         quality: "gold",
         source: {
           en: "Gold quality Spring Crops",
+          es: "Cultivo dorado de Primavera",
         },
       },
       {
@@ -498,6 +539,7 @@ const BUNDLES: Bundle[] = [
         quality: "gold",
         source: {
           en: "Gold quality Summer Crops",
+          es: "Cultivo dorado de Verano",
         },
       },
       {
@@ -506,6 +548,7 @@ const BUNDLES: Bundle[] = [
         quality: "gold",
         source: {
           en: "Gold quality Fall Crops",
+          es: "Cultivo dorado de Otoño",
         },
       },
       {
@@ -514,6 +557,7 @@ const BUNDLES: Bundle[] = [
         quality: "gold",
         source: {
           en: "Gold quality Summer / Fall Crops",
+          es: "Cultivo dorado de Verano / Otoño",
         },
       },
     ],
@@ -539,6 +583,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Cow",
+          es: "Vacas",
         },
       },
       {
@@ -547,6 +592,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Brown Chicken",
+          es: "Gallina marrón",
         },
         kind: "Brown",
       },
@@ -556,6 +602,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "White Chicken",
+          es: "Gallina blanca",
         },
       },
       {
@@ -564,6 +611,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Goat",
+          es: "Cabras",
         },
       },
       {
@@ -572,6 +620,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Sheep, Rabbit",
+          es: "Oveja, Conejos",
         },
       },
       {
@@ -580,6 +629,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Duck",
+          es: "Patos",
         },
       },
     ],
@@ -605,6 +655,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Made from Truffle using an Oil Maker",
+          es: "Hecho de Trufas en una Aceitera",
         },
       },
       {
@@ -613,6 +664,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Loom, Recycling Machine a Soggy Newspaper, Desert Trader, dropped by Mummy in Skull Cavern",
+          es: "Telar, recli de un Periódico empapado en una Máquina recicladora, Comerciante del desierto, botín de Momias en la Caverna Calavera",
         },
       },
       {
@@ -621,6 +673,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Cheese Press",
+          es: "Hecho de Leche de cabra en una Prensa de queso",
         },
       },
       {
@@ -629,6 +682,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Cheese Press, Desert Trader",
+          es: "Hecho de Leche en una Prensa de queso, Comerciante del desierto",
         },
       },
       {
@@ -637,6 +691,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Bee House, Oasis",
+          es: "Colmena, Oasis",
         },
       },
       {
@@ -645,6 +700,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Preserves Jar",
+          es: "Hecha de Frutas en una Envasadora",
         },
       },
       {
@@ -653,6 +709,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Apple Tree during Fall, The Cave (fruit bat option)",
+          es: "Manzano durante Otoño, La Cueva de Granja (Opción de Murciélagos de la fruta)",
         },
       },
       {
@@ -661,6 +718,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Apricot Tree during Spring, The Cave (fruit bat option)",
+          es: "Albaricoquero durante Primavera, La Cueva de Granja (Opción de Murciélagos de la fruta)",
         },
       },
       {
@@ -669,6 +727,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Orange Tree during Summer, The Cave (fruit bat option)",
+          es: "Naranjo durante Verano, La Cueva de Granja (Opción de Murciélagos de la fruta)",
         },
       },
       {
@@ -677,6 +736,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Peach Tree during Summer, The Cave (fruit bat option)",
+          es: "Melocotonero durante Verano, La Cueva de Granja (Opción de Murciélagos de la fruta)",
         },
       },
       {
@@ -685,6 +745,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Pomegranate Tree during Fall, The Cave (fruit bat option)",
+          es: "Granado durante Otoño, La Cueva de Granja (Opción de Murciélagos de la fruta)",
         },
       },
       {
@@ -693,6 +754,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Cherry Tree during Spring, The Cave (fruit bat option)",
+          es: "Cerezo durante Primavera, La Cueva de Granja (Opción de Murciélagos de la fruta)",
         },
       },
     ],
@@ -711,6 +773,7 @@ const BUNDLES: Bundle[] = [
     location: "Fish_Tank",
     help: {
       en: "All River Fish can be found in the Farm Maps, Farm Maps, or Farm Maps.",
+      es: "Todos los peces de río se pueden encontrar en la Granja Fluvial, la Granja Minera o la Granja Forestal.",
     },
     icon: "/img/Bundle_Teal.png",
     required: 4,
@@ -720,7 +783,8 @@ const BUNDLES: Bundle[] = [
         quantity: 1,
         quality: "normal",
         source: {
-          en: "Found in Rivers, 6am – 7pm, Spring and Summer during sunny weather.",
+          en: "Found in Rivers, 6am - 7pm, Spring and Summer during sunny weather.",
+          es: "Se encuentra en Ríos, 6:00 AM - 7:00 PM, Primavera, y Verano durante clima soleado",
         },
       },
       {
@@ -728,7 +792,8 @@ const BUNDLES: Bundle[] = [
         quantity: 1,
         quality: "normal",
         source: {
-          en: "Found in Rivers and Secret Woods, 6am – midnight, Spring and Fall. Only when raining.Can be found in Summer during rain in the Secret Woods and Witch's Swamp, Winter with a Rain Totem.",
+          en: "Found in Rivers and Secret Woods, 6am - midnight, Spring and Fall. Only when raining.Can be found in Summer during rain in the Secret Woods and Witch's Swamp, Winter with a Rain Totem.",
+          es: "Se encuentra en Ríos y Bosque Secreto, 6:00 AM hasta la media noche, Primavera y Otoño. Solo cuando llueve. Puede ser encontrado en Verano mientras llueve en el Bosque Secreto y el Pantano de la Bruja, Invierno con un Tótem de lluvia.",
         },
       },
       {
@@ -736,7 +801,8 @@ const BUNDLES: Bundle[] = [
         quantity: 1,
         quality: "normal",
         source: {
-          en: "Found in Rivers, 9am – 2am, Spring, Summer, and Fall. Only when raining.",
+          en: "Found in Rivers, 9am - 2am, Spring, Summer, and Fall. Only when raining.",
+          es: "Se encuentra en Ríos, 9:00 AM hasta las 2:00 AM, Primavera, Verano y Otoño. Sólo cuando llueve.",
         },
       },
       {
@@ -744,7 +810,8 @@ const BUNDLES: Bundle[] = [
         quantity: 1,
         quality: "normal",
         source: {
-          en: "Found in Rivers, 6am – 7pm, Fall and Winter. Can be found in any Weather.",
+          en: "Found in Rivers, 6am - 7pm, Fall and Winter. Can be found in any Weather.",
+          es: "Se encuentra en Ríos, 6:00 AM – 7:00 PM, Otoño e Invierno. Puede pescarse en cualquier clima.",
         },
       },
     ],
@@ -763,6 +830,7 @@ const BUNDLES: Bundle[] = [
     location: "Fish_Tank",
     help: {
       en: "All Mountain Lake Fish can be found in any Weather, and in the Farm Maps.",
+      es: "Todos los peces de los Lagos de Montaña se pueden encontrar en cualquier clima, y en la Granja Salvaje.",
     },
     icon: "/img/Bundle_Green.png",
     required: 4,
@@ -772,7 +840,8 @@ const BUNDLES: Bundle[] = [
         quantity: 1,
         quality: "normal",
         source: {
-          en: "Found in the Mountain Lake, 6am – 7pm, All Seasons.",
+          en: "Found in the Mountain Lake, 6am - 7pm, All Seasons.",
+          es: "Se encuentra en el Lago de la Montaña, 6:00 AM – 7:00 PM, Todas las estaciones.",
         },
       },
       {
@@ -781,6 +850,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Found in the Mountain Lake, Anytime, during Spring, Summer, or Fall.Found in Secret Woods or The Sewers, Anytime, All Seasons.",
+          es: "Se encuentra en el Lago de la Montaña, A cualquier hora, durante Primavera, Verano y Otoño. Se puede pescar en el Bosque Secreto o Las Cloacas, a cualquier hora, en cualquier estación.",
         },
       },
       {
@@ -789,6 +859,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Found in the Mountain Lake, Anytime, All Seasons.",
+          es: "Se encuentra en el Lago de la Montaña. A cualquier hora. Todas las estaciones",
         },
       },
       {
@@ -796,7 +867,8 @@ const BUNDLES: Bundle[] = [
         quantity: 1,
         quality: "normal",
         source: {
-          en: "Found in the Mountain Lake, 6am – 7pm, Summer and Winter.",
+          en: "Found in the Mountain Lake, 6am - 7pm, Summer and Winter.",
+          es: "Se encuentra en el Lago de la Montaña, 6:00 AM – 7:00 PM, Verano e Invierno",
         },
       },
     ],
@@ -821,7 +893,8 @@ const BUNDLES: Bundle[] = [
         quantity: 1,
         quality: "normal",
         source: {
-          en: "Found in the Ocean, 6am – 7pm, Spring, Fall, and Winter.",
+          en: "Found in the Ocean, 6am - 7pm, Spring, Fall, and Winter.",
+          es: "Se encuentra en el océano, 6:00 AM - 7:00 PM, Primavera, Otoño e Invierno",
         },
       },
       {
@@ -829,7 +902,8 @@ const BUNDLES: Bundle[] = [
         quantity: 1,
         quality: "normal",
         source: {
-          en: "Found in the Ocean, 6am – 7pm, Summer and Winter.",
+          en: "Found in the Ocean, 6am - 7pm, Summer and Winter.",
+          es: "Se encuentra en el océano, 6:00 AM - 7:00 PM, Verano e Invierno",
         },
       },
       {
@@ -837,7 +911,8 @@ const BUNDLES: Bundle[] = [
         quantity: 1,
         quality: "normal",
         source: {
-          en: "Found in the Ocean, 6am – 7pm, Summer and Fall. Only when raining.",
+          en: "Found in the Ocean, 6am - 7pm, Summer and Fall. Only when raining.",
+          es: "Se encuentra en el océano, 6:00 AM - 7:00 PM, Verano y Otoño. Sólo cuando llueve",
         },
       },
       {
@@ -845,7 +920,8 @@ const BUNDLES: Bundle[] = [
         quantity: 1,
         quality: "normal",
         source: {
-          en: "Found in the Ocean, 6am – 2pm, Summer and Fall.",
+          en: "Found in the Ocean, 6am - 2pm, Summer and Fall.",
+          es: "Se encuentra en el océano, 6:00 AM - 2:00 PM, Verano y Otoño",
         },
       },
     ],
@@ -870,7 +946,8 @@ const BUNDLES: Bundle[] = [
         quantity: 1,
         quality: "normal",
         source: {
-          en: "Found in Rivers, the Mountain Lake, and Cindersap Forest Pond, 12pm – 2am, Fall ( Winter with Rain Totem.) Only when raining.",
+          en: "Found in Rivers, the Mountain Lake, and Cindersap Forest Pond, 12pm - 2am, Fall ( Winter with Rain Totem.) Only when raining.",
+          es: "Se encuentra en el Río, el Lago de la Montaña, y el estanque del Bosque Tizón, 12:00 PM - 2:00 AM, Otoño, (Invierno con Tótem de lluvia.) Sólo cuando llueve.",
         },
       },
       {
@@ -878,7 +955,8 @@ const BUNDLES: Bundle[] = [
         quantity: 1,
         quality: "normal",
         source: {
-          en: "Found in Rivers, 6pm – 2am, All Seasons.",
+          en: "Found in Rivers, 6pm - 2am, All Seasons.",
+          es: "Se encuentra en Ríos, 6:00 PM - 2:00 AM. Todas las estaciones.",
         },
       },
       {
@@ -886,7 +964,8 @@ const BUNDLES: Bundle[] = [
         quantity: 1,
         quality: "normal",
         source: {
-          en: "Found in the Ocean, 4pm – 2am, Spring or Fall. Only when raining.",
+          en: "Found in the Ocean, 4pm - 2am, Spring or Fall. Only when raining.",
+          es: "Se encuentra en el océano, 4:00 PM – 2:00 AM, Primavera y Otoño. Sólo cuando llueve.",
         },
       },
     ],
@@ -912,6 +991,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Caught in Crab Pot (ocean)",
+          es: "Capturado en una Trampa para cangrejos (Océano)",
         },
       },
       {
@@ -920,6 +1000,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Caught in Crab Pot (freshwater)",
+          es: "Capturado en una Trampa para cangrejos (Agua dulce)",
         },
       },
       {
@@ -928,6 +1009,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Caught in Crab Pot (ocean), drops from Rock Crab or Lava Crab in The Mines",
+          es: "Capturado en una Trampa para cangrejos (Océano), botín de Cangrejos de roca o Cangrejos de lava en Las minas",
         },
       },
       {
@@ -936,6 +1018,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Caught in Crab Pot (ocean), The Beach Foraging",
+          es: "Capturado en una Trampa para cangrejos (Océano), Recolección en La Playa",
         },
       },
       {
@@ -944,6 +1027,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Caught in Crab Pot (ocean), The Beach Foraging",
+          es: "Capturado en una Trampa para cangrejos (Océano), Recolección en La Playa",
         },
       },
       {
@@ -952,6 +1036,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Caught in Crab Pot (ocean)",
+          es: "Capturada en una Trampa para cangrejos (Océano)",
         },
       },
       {
@@ -960,6 +1045,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Caught in Crab Pot (freshwater)",
+          es: "Capturado en una Trampa para cangrejos (Agua dulce)",
         },
       },
       {
@@ -968,6 +1054,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Caught in Crab Pot (freshwater)",
+          es: "Capturado en una Trampa para cangrejos (Agua dulce)",
         },
       },
       {
@@ -976,6 +1063,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Caught in Crab Pot (ocean), The Beach Foraging",
+          es: "Capturada en una Trampa para cangrejos (Océano), Recolección en La Playa",
         },
       },
       {
@@ -984,6 +1072,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Caught in Crab Pot (ocean), The Beach Foraging",
+          es: "Capturada en una Trampa para cangrejos (Océano), Recolección en La Playa",
         },
       },
     ],
@@ -1008,7 +1097,8 @@ const BUNDLES: Bundle[] = [
         quantity: 1,
         quality: "normal",
         source: {
-          en: "Found in the Ocean, 12pm – 4pm, Summer during sunny weather.",
+          en: "Found in the Ocean, 12pm - 4pm, Summer during sunny weather.",
+          es: "Se encuentra en el Océano, 12:00 PM – 4:00 PM, Verano durante un día soleado.",
         },
       },
       {
@@ -1017,6 +1107,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Found in ponds in The Mines floors 20 and 60, Anytime, All Seasons. May also be dropped by Ghost.",
+          es: "Se encuentra en los estanques de Las minas, piso 20 y 60, A cualquier hora, Todas las estaciones. También es botín de Fantasmas.",
         },
       },
       {
@@ -1024,7 +1115,8 @@ const BUNDLES: Bundle[] = [
         quantity: 1,
         quality: "normal",
         source: {
-          en: "Found in the pond in The Desert, 6am – 8pm, All Seasons.",
+          en: "Found in the pond in The Desert, 6am - 8pm, All Seasons.",
+          es: "Se encuentra en el estanque del Desierto de Calico, 6:00 AM - 10:00 PM, Todas las estaciones.",
         },
       },
       {
@@ -1033,6 +1125,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Found in the Secret Woods and the Farm Maps, Anytime, All Seasons.",
+          es: "Se encuentra en el Bosque Secreto y la Granja Forestal, A cualquier hora, Todas las estaciones.",
         },
       },
     ],
@@ -1058,6 +1151,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Smelting Copper Ore in the Furnace",
+          es: "Fundiendo Menas de cobre en un Horno",
         },
       },
       {
@@ -1066,6 +1160,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: 'Smelting Iron Ore in the Furnace, Crafting the "Transmute (Fe)" recipe',
+          es: 'Fundiendo Menas de hierro en un Horno, Fabricándolo con la receta "Transmutar (Fe)"',
         },
       },
       {
@@ -1074,6 +1169,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: 'Smelting Gold Ore in the Furnace, Crafting the "Transmute (Au)" recipe',
+          es: 'Fundiendo Menas de oro en un Horno, Fabricándolo con la receta "Transmutar (Au)"',
         },
       },
     ],
@@ -1099,6 +1195,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Minerals on all floors of The Mines",
+          es: "Recolectándolo en cualquier piso de Las minas.",
         },
       },
       {
@@ -1107,6 +1204,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Minerals on floors 1-39 of The Mines, Geode, Omni Geode, drop from Duggy in the Mines (floors 6-29)",
+          es: "Recolectándolo en los pisos 1-39 de Las minas, Geodas, botín de Cavadorines en Las minas. (Pisos 6-29)",
         },
       },
       {
@@ -1115,6 +1213,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Minerals on floors 41-79 of The Mines, Frozen Geode, Omni Geode, drop from Dust Sprite in the Mines (floors 41-79)",
+          es: "Reconlectándola en los pisos 41-79 de Las minas, Geodas de hielo, Omnigeodas, botín de Duendes del polvo en Las minas. (Pisos 41-79)",
         },
       },
       {
@@ -1123,6 +1222,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Minerals on floors 81-119 of The Mines, Magma Geode, Omni Geode",
+          es: "Recolectándolo en los pisos 81-119 de Las minas, Geodas de magma, Omnigeodas.",
         },
       },
     ],
@@ -1148,6 +1248,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Dropped by Slimes",
+          es: "Botín de Babas.",
         },
       },
       {
@@ -1156,6 +1257,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Dropped by Bats in The Mines or the Skull Cavern",
+          es: "Botín de Murciélagos en Las minas o la Caverna Calavera.",
         },
       },
       {
@@ -1164,6 +1266,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Dropped by Ghost, Squid Kid, or Metal Head in The Mines, dropped by Mummy or Bats in the Skull Cavern ; produced by Sunfish in Fish Pond ; buy from Krobus",
+          es: "Botín de Fantasmas, Niños calamar o Cabezas de metal en Las minas, botín de Momias o Murciélagos de iridio en la Caverna Calavera; producido por Pez sol en el Estanque de peces; comprando a Krobus.",
         },
       },
       {
@@ -1172,6 +1275,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Dropped by Shadow Brute or Shadow Shaman in The Mines or Serpent in the Skull Cavern ; produced by Void Salmon in Fish Pond ; buy from Krobus",
+          es: "Botín de Bestias de las sombras o Chamanes de las sombras en Las minas o Serpientes en la Caverna Calavera; producido por Salmón de vacío en el Estanque de peces; comprando a Krobus.",
         },
       },
     ],
@@ -1197,6 +1301,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Tapper Maple Tree",
+          es: "Resinera en un Arce.",
         },
       },
       {
@@ -1205,6 +1310,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Summer Foraging in the Secret Woods, Foraging on Prehistoric Floors at the Skull Cavern, Cutting down Green Rain Trees",
+          es: "Recolección en el Bosque secreto en Verano, Recolectando en pisos prehistóricos en la Caverna Calavera.",
         },
       },
       {
@@ -1213,6 +1319,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Pig",
+          es: "Cerdos.",
         },
       },
       {
@@ -1221,6 +1328,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Summer Crops",
+          es: "Cultivo de Verano.",
         },
       },
       {
@@ -1229,6 +1337,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Cooking (recipe sources: The Queen of Sauce, The Stardrop Saloon )",
+          es: "Cocina (Receta: La reina de la salsa (21 de Verano, Año 1), Salón Fruta Estelar)",
         },
       },
       {
@@ -1237,6 +1346,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Cooking",
+          es: "Cocina",
         },
       },
     ],
@@ -1262,6 +1372,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Foraging in The Mines, Summer or Fall Foraging in the Secret Woods, The Cave (mushroom option), Tapper a Mushroom Tree",
+          es: "Recolección en Las minas, Recolección en el Bosque secreto en Verano y Otoño, La Cueva de Granja (Opción de Setas), Resinera sobre Árbol seta.",
         },
       },
       {
@@ -1270,6 +1381,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "The Beach Foraging, after using 300 Wood to fix the bridge to the right side of The Beach or any side of the beach during The Beach ; foraging in the Beach Farm",
+          es: "Recolección en La Playa tras usar 300 de madera para arreglar el puente a la derecha de La playa o cualquier lado de la playa durante la temporada de apareamiento del cangrejo; Recolección en la Granja de la playa.",
         },
       },
       {
@@ -1278,6 +1390,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Summer / Fall Crops",
+          es: "Cultivo de Verano/Otoño.",
         },
       },
       {
@@ -1286,6 +1399,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Duck",
+          es: "Patos",
         },
       },
       {
@@ -1294,6 +1408,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Mining, boxes in The Mines, Fishing",
+          es: "Minería, cajas de Las minas, Pescando cofres del tesoro.",
         },
       },
       {
@@ -1302,6 +1417,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Summer Crops ( Red Cabbage Seeds are available at Pierre's General Store in year 2+, at the Traveling Cart, or dropped by Serpent, Mummy, and Slimes )",
+          es: "Cultivo de Verano (Las Semillas de lombarda están disponibles en la Tienda local Pierre's a partir del año 2, en el Carro Ambulante, o botín de Serpientes, Momias, y Babas púrpuras)",
         },
       },
     ],
@@ -1327,6 +1443,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "The Mines, The Cave (mushroom option), Farm Maps Foraging in Fall",
+          es: "Recolección en Las minas, La Cueva de Granja (Opción de Setas), Recolección en la Granja Forestal en Otoño",
         },
       },
       {
@@ -1335,6 +1452,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Winter The Beach Foraging, Farm Maps Foraging during any season, Random gift from Demetrius",
+          es: "Recolección en La Playa en Invierno, Recolección en la Granja de la Playa en cualquier estación. Regalo aleatorio de Demetrius (Nota: No confundir con Fósil de nautilo)",
         },
       },
       {
@@ -1343,6 +1461,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Can be found in the mountain lake and river during all seasons, any time.",
+          es: "Se encuentra en Lago de la Montaña y los Ríos en todas las estaciones.",
         },
       },
       {
@@ -1351,6 +1470,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "The Mines floors 41-79",
+          es: "Las minas (Pisos 41-79)",
         },
       },
     ],
@@ -1376,6 +1496,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Summer / Fall Crops",
+          es: "Cosechándolo en Verano / Otoño",
         },
       },
       {
@@ -1384,6 +1505,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Purchase at Marnie's Ranch or Desert Trader, or harvest from Grass or Wheat.",
+          es: "Comprándolo en el Rancho de Marnie o del Comerciante del desierto, cortando Hierba o Trigo con la Guadaña teniendo un Silo",
         },
       },
       {
@@ -1392,6 +1514,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Apple Tree during Fall, The Cave (fruit bat option)",
+          es: "Manzano en Otoño, La Cueva de Granja (Opción de Murciélagos de la fruta)",
         },
       },
     ],
@@ -1417,6 +1540,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Tapper Oak Tree",
+          es: "Resinera en un Roble",
         },
       },
       {
@@ -1425,6 +1549,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Keg",
+          es: "Hecho de Frutas en un Barril",
         },
       },
       {
@@ -1433,6 +1558,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Rabbit, Serpent drop in Skull Cavern (0.8%)",
+          es: "Conejo, botín de Serpientes en la Caverna Calavera (0.8%)",
         },
       },
       {
@@ -1441,6 +1567,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Pomegranate Tree during Fall, The Cave (fruit bat option)",
+          es: "Granado en Otoño, La Cueva de Granja (Opción de Murciélagos de la fruta)",
         },
       },
     ],
@@ -1554,6 +1681,7 @@ const BUNDLES: Bundle[] = [
         quality: ["silver", "gold", "iridium"],
         source: {
           en: "Cask, Ginger Island resort",
+          es: "Tonel, El Balneario de la Isla Jengibre",
         },
       },
       {
@@ -1562,6 +1690,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Mayonnaise Machine",
+          es: "Mayonesera",
         },
       },
       {
@@ -1570,6 +1699,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Mining",
+          es: "Minería",
         },
       },
       {
@@ -1578,6 +1708,7 @@ const BUNDLES: Bundle[] = [
         quality: ["gold", "iridium"],
         source: {
           en: "Crops",
+          es: "Cultivos",
         },
       },
       {
@@ -1586,6 +1717,7 @@ const BUNDLES: Bundle[] = [
         quality: ["gold", "iridium"],
         source: {
           en: "Fishing in the Witch's Swamp",
+          es: "Pescando en el Pantano de la Bruja.",
         },
       },
       {
@@ -1594,6 +1726,7 @@ const BUNDLES: Bundle[] = [
         quality: "normal",
         source: {
           en: "Preserves Jar product from Sturgeon Roe",
+          es: "Envasadora, producto de las huevas del Esturión.",
         },
       },
     ],

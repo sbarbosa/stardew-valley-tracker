@@ -12,6 +12,8 @@ export const NavBar = () => {
   const { t } = useTranslation();
   const [filter, setFilter] = useAtom(filterAtom);
 
+  console.log('Filters: ', filter)
+
   const combobox = useCombobox({
     onDropdownClose: () => combobox.resetSelectedOption(),
   });
@@ -31,17 +33,20 @@ export const NavBar = () => {
             onClick={(event) => {
               event.stopPropagation();
               setFilter((data) => { data.weather = undefined });
+              combobox.closeDropdown();
             }} />
         )}
       </Group>
     );
   }
 
-  console.log('Filters: ', filter)
-
   const onSeasonChange = debounce((value) => {
     setFilter((data) => {
       data.season = value;
+
+      if (!value || !value.length) {
+        data.lastChance = false;
+      }
     })
   }, 300);
 
@@ -67,6 +72,7 @@ export const NavBar = () => {
         <Switch
           label={t('filter.season.lastChance')}
           checked={filter.lastChance}
+          disabled={!filter.season.length}
           onChange={() => setFilter((data) => { data.lastChance = !data.lastChance })}
         />
       </Tooltip>

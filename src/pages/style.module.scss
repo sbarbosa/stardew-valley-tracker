@@ -9,7 +9,10 @@
     height: 82vh;
   }
 
-  .content,
+  .content {
+    flex: 1;
+    padding-right: var(--mantine-spacing-md);
+  }
   .searchbox {
     padding-right: var(--mantine-spacing-md);
   }

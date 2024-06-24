@@ -1,14 +1,15 @@
 import { Card, type CardProps, Group, Text, Image } from "@mantine/core";
-import { ItemIcon } from "./item-icon";
-import { ItemName } from "./item-name";
-import ITEMS_MAP from "src/data/_items";
-import type { Bundle as TBundle } from "src/data/_types";
+import type { Item, ItemId, Bundle as TBundle } from "src/data/_types";
+import ItemName from "./item-name";
+import ItemIcon from "./item-icon";
+
+const ITEMS_MAP: Record<ItemId, Item> = {} as Record<ItemId, Item>;
 
 interface Props extends CardProps {
   bundle: TBundle;
 }
 
-export const Bundle = ({ bundle, ...props }: Props) => {
+const Bundle = ({ bundle, ...props }: Props) => {
   const rewardItem = bundle.reward ? ITEMS_MAP[bundle.reward.id] : undefined;
 
   return (

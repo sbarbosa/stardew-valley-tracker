@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { type FunctionComponent, type SVGAttributes, useMemo, useState } from "react";
-import { ActionIcon, Image, type MantineSize, Menu } from "@mantine/core";
+import { ActionIcon, type MantineSize, Menu } from "@mantine/core";
 import { useLocalStorage } from "@mantine/hooks";
 import * as flags from "src/assets/images/flags";
 
@@ -14,7 +14,7 @@ interface Props {
   disabled?: boolean;
 }
 
-export const LanguageSwitcher = ({ size = "md", disabled }: Props) => {
+const LanguageSwitcher = ({ size = "md", disabled }: Props) => {
   const { t, i18n } = useTranslation();
   const [_, storeLanguage] = useLocalStorage<string>({ key: "lang", defaultValue: i18n.language });
   const [lang, setLang] = useState<string>(i18n.language);
@@ -56,3 +56,5 @@ export const LanguageSwitcher = ({ size = "md", disabled }: Props) => {
     </Menu>
   );
 };
+
+export default LanguageSwitcher;

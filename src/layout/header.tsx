@@ -1,6 +1,7 @@
 import { Burger, Flex, Stack, Text, Title } from "@mantine/core"
 import { useTranslation } from "react-i18next";
-import { LanguageSwitcher, ThemeSwitcher } from "src/components"
+import LanguageSwitcher from "src/components/language-switcher";
+import ThemeSwitcher from "src/components/theme-switcher";
 
 import classes from "./style.module.scss";
 

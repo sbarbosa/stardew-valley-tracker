@@ -9,7 +9,7 @@ interface Props {
   disabled?: boolean;
 }
 
-export const ThemeSwitcher = ({ size = "md", disabled }: Props) => {
+const ThemeSwitcher = ({ size = "md", disabled }: Props) => {
   const computedColorScheme = useComputedColorScheme("light", { getInitialValueInEffect: true });
   const { setColorScheme } = useMantineColorScheme();
 
@@ -27,7 +27,8 @@ export const ThemeSwitcher = ({ size = "md", disabled }: Props) => {
       color={isLight ? "dark" : "gray"}
     >
       {isLight ? <WeatherNightIcon /> : <WeatherSunnyIcon />}
-      {/* <Icon path={isLight ? mdiWeatherNight : mdiWeatherSunny} /> */}
     </ActionIcon>
   );
 };
+
+export default ThemeSwitcher;

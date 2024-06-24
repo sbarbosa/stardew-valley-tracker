@@ -8,7 +8,7 @@ interface Props {
   size?: number
 }
 
-export const ItemIcon = ({ icon, quality, kind, size = 30 }: Props) => {
+const ItemIcon = ({ icon, quality, kind, size = 30 }: Props) => {
   const displayedQuality = Array.isArray(quality) ? quality[0] : quality;
   const IconPath = kind ? icon.replace('.png', `_${kind}.png`) : icon;
 
@@ -21,3 +21,5 @@ export const ItemIcon = ({ icon, quality, kind, size = 30 }: Props) => {
     </Box>
   );
 }
+
+export default ItemIcon;

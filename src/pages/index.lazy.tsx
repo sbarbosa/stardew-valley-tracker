@@ -1,16 +1,15 @@
-import { Box, Container, Input, ScrollArea, Stack } from "@mantine/core";
+import { Box, Center, Container, Input, Loader, ScrollArea } from "@mantine/core";
 import { createLazyFileRoute } from "@tanstack/react-router";
-import { useListBundles } from "src/hooks/use-list-bundles";
 import debounce from "debounce";
 import { useAtom } from "jotai";
 import filterAtom from "src/data/filter-atom";
 import classes from "./style.module.scss";
 import { Suspense, lazy } from "react";
 
-const Bundle = lazy(() => import('src/components/bundle'));
+const ItemList = lazy(() => import('src/components/item-list'));
+
 
 function Home() {
-  const bundles = useListBundles();
   const [filter, setFilter] = useAtom(filterAtom);
 
   const onSearchChange = debounce((element) => {
@@ -26,13 +25,9 @@ function Home() {
       </Box>
 
       <ScrollArea type="auto" className={classes.content}>
-        <Stack gap="md">
-          <Suspense fallback={"LOADING!!"}>
-            {bundles.map((bundle) => (
-              <Bundle key={bundle.id} bundle={bundle} />
-            ))}
-          </Suspense>
-        </Stack>
+        <Suspense fallback={<Center mt="xl"><Loader size="lg" type="dots" /></Center>}>
+          <ItemList />
+        </Suspense>
       </ScrollArea>
     </Container>
   );
