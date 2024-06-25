@@ -43,7 +43,7 @@ export const Layout = ({ children }: Props) => {
 
       <AppShell.Navbar p="md"><NavBar /></AppShell.Navbar>
 
-      <AppShell.Main>{children}</AppShell.Main>
+      <AppShell.Main classNames={classes}>{children}</AppShell.Main>
 
       <AppShell.Footer classNames={classes}>
         <Footer />

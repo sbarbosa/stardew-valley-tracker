@@ -1,32 +1,23 @@
-import { Box, Center, Container, Input, Loader, ScrollArea } from "@mantine/core";
+import { Center, Container, Loader, ScrollArea } from "@mantine/core";
 import { createLazyFileRoute } from "@tanstack/react-router";
-import debounce from "debounce";
-import { useAtom } from "jotai";
-import filterAtom from "src/data/filter-atom";
+import { Suspense, lazy, useRef } from "react";
+import SearchBox from "src/components/search-box";
+import type { ItemListRef } from "src/components/item-list";
+
 import classes from "./style.module.scss";
-import { Suspense, lazy } from "react";
 
 const ItemList = lazy(() => import('src/components/item-list'));
 
-
 function Home() {
-  const [filter, setFilter] = useAtom(filterAtom);
-
-  const onSearchChange = debounce((element) => {
-    setFilter((data) => {
-      data.name = element.target.value;
-    })
-  }, 200);
+  const itemListRef = useRef<ItemListRef>(null);
 
   return (
     <Container fluid className={classes.container}>
-      <Box className={classes.searchbox}>
-        <Input placeholder="Search ..." defaultValue={filter.name} radius={8} size="md" onChange={onSearchChange} />
-      </Box>
+      <SearchBox className={classes.searchbox} itemListRef={itemListRef} />
 
       <ScrollArea type="auto" className={classes.content}>
         <Suspense fallback={<Center mt="xl"><Loader size="lg" type="dots" /></Center>}>
-          <ItemList />
+          <ItemList ref={itemListRef} />
         </Suspense>
       </ScrollArea>
     </Container>

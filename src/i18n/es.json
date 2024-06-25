@@ -6,6 +6,8 @@
     "lang.en": "English",
     "lang.switch": "Cambiar idioma",
     "theme.toggleColorScheme": "Cambiar esquema de colores",
+    "search.placeholder": "Buscar...",
+    "search.options.clearOrder": "Limpiar orden",
     "filter.season": "Temporada",
     "filter.season.lastChance": "Última oportunidad",
     "filter.season.lastChance.tooltip": "Última oportunidad de conseguir el artículo antes de que cambie la temporada.",

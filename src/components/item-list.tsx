@@ -8,10 +8,19 @@ import classes from "./style.module.scss";
 import useListItems from 'src/hooks/use-list-items';
 // import { useTranslation } from 'react-i18next';
 import ItemName from './item-name';
+import { forwardRef, useImperativeHandle } from 'react';
 
-const ItemList = () => {
+export interface ItemListRef {
+  resetOrder: () => void;
+}
+
+const ItemList = forwardRef<ItemListRef>((_, ref) => {
   const [items, handlers] = useListItems();
   // const { i18n } = useTranslation();
+
+  useImperativeHandle(ref, () => ({
+    resetOrder: () => handlers.resetOrder(),
+  }));
 
   return (
     <DragDropContext
@@ -53,6 +62,6 @@ const ItemList = () => {
     </DragDropContext>
 
   );
-}
+});
 
 export default ItemList;

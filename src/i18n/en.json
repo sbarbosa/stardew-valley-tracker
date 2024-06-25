@@ -6,6 +6,8 @@
     "lang.en": "English",
     "lang.switch": "Switch language",
     "theme.toggleColorScheme": "Switch color scheme",
+    "search.placeholder": "Search...",
+    "search.options.clearOrder": "Clear order",
     "filter.season": "Season",
     "filter.season.lastChance": "Last chance",
     "filter.season.lastChance.tooltip": "Last chance to get the item before the season changes.",
