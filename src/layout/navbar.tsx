@@ -29,6 +29,7 @@ export const NavBar = () => {
         {claseButton && (
           <CloseButton
             size="sm"
+            component="a"
             radius={4}
             onClick={(event) => {
               event.stopPropagation();
@@ -117,8 +118,8 @@ export const NavBar = () => {
         <InputLabel size="md">{t('filter.achivements.label')}</InputLabel>
         <Switch
           label={t('filter.achivements.masterAngler')}
-          checked={filter.masterAngler}
-          onChange={() => setFilter((data) => { data.masterAngler = !data.masterAngler })}
+          checked={!!filter.achivements.master_angler}
+          onChange={() => setFilter((data) => { data.achivements.master_angler = !data.achivements.master_angler })}
         />
       </Stack>
 

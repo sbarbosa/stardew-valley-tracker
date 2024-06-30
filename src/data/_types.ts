@@ -90,6 +90,41 @@ export type ItemId =
   | "Tiger_Trout"
   | "Deluxe_Bait"
   | "Largemouth_Bass"
+  | "Smallmouth_Bass"
+  | "Rainbow_Trout"
+  | "Salmon"
+  | "Perch"
+  | "Pike"
+  | "Red_Mullet"
+  | "Herring"
+  | "Octopus"
+  | "Squid"
+  | "Sea_Cucumber"
+  | "Super_Cucumber"
+  | "Ghostfish"
+  | "Stonefish"
+  | "Ice_Pip"
+  | "Lava_Eel"
+  | "Scorpion_Carp"
+  | "Flounder"
+  | "Midnight_Carp"
+  | "Dorado"
+  | "Albacore"
+  | "Lingcod"
+  | "Halibut"
+  | "Slimejack"
+  | "Stingray"
+  | "Lionfish"
+  | "Blue_Discus"
+  | "Goby"
+  | "Midnight_Squid"
+  | "Spook_Fish"
+  | "Blobfish"
+  | "Crimsonfish"
+  | "Angler"
+  | "Legend"
+  | "Glacierfish"
+  | "Mutant_Carp"
   | "Carp"
   | "Bullhead"
   | "Sturgeon"
@@ -115,6 +150,7 @@ export type ItemId =
   | "Clam"
   | "Crab_Pot"
   | "Pufferfish"
+  | "Anchovy"
   | "Ghostfish"
   | "Sandfish"
   | "Woodskip"
@@ -182,14 +218,30 @@ export const getQualityIcon = (quality: ItemQuality) => {
   return undefined;
 };
 
+type RequiredByBundle = Omit<BundleItem, "id"> & {
+  type: "bundle";
+  id: BundleId;
+}
+
+export type AchivementType = "master_angler";
+
+interface RequiredByAchivement {
+  type: AchivementType;
+}
+
+type RequiredBy = RequiredByBundle | RequiredByAchivement;
+
 export interface Item {
   id: ItemId;
   name: MultyLangText;
   icon: string;
   season?: Season[];
+  weather?: Weather[];
+  source?: MultyLangText;
+  requiredBy?: RequiredBy[];
 }
 
-type BundleId =
+export type BundleId =
   | "Spring_Foraging_Bundle"
   | "Summer_Foraging_Bundle"
   | "Fall_Foraging_Bundle"
@@ -247,7 +299,6 @@ export interface BundleItem {
   kind?: string;
   quantity: number;
   quality: ItemQuality | ItemQuality[];
-  source?: MultyLangText;
 }
 export interface Bundle {
   id: BundleId;
