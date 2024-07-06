@@ -117,9 +117,9 @@ export const NavBar = () => {
       <Stack>
         <InputLabel size="md">{t('filter.achivements.label')}</InputLabel>
         <Switch
-          label={t('filter.achivements.masterAngler')}
-          checked={!!filter.achivements.master_angler}
-          onChange={() => setFilter((data) => { data.achivements.master_angler = !data.achivements.master_angler })}
+          label={t('achivements.Master_Angler')}
+          checked={!!filter.achivements.Master_Angler}
+          onChange={() => setFilter((data) => { data.achivements.Master_Angler = !data.achivements.Master_Angler })}
         />
       </Stack>
 

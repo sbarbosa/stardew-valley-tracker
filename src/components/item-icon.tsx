@@ -13,10 +13,10 @@ const ItemIcon = ({ icon, quality, kind, size = 30 }: Props) => {
   const IconPath = kind ? icon.replace('.png', `_${kind}.png`) : icon;
 
   return (
-    <Box component="span" pos="relative">
+    <Box component="span" pos="relative" miw={size}>
       <Image src={IconPath} alt="" width={size} height={size} />
       {displayedQuality && displayedQuality !== 'normal' && (
-        <Image src={`${getQualityIcon(displayedQuality)}`} alt="" width={size} height={size} pos="absolute" top="0" />
+        <Image src={getQualityIcon(displayedQuality)} alt="" width={size} height={size} pos="absolute" top="0" />
       )}
     </Box>
   );

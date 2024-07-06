@@ -223,13 +223,13 @@ type RequiredByBundle = Omit<BundleItem, "id"> & {
   id: BundleId;
 }
 
-export type AchivementType = "master_angler";
+export type AchivementType = "Master_Angler";
 
 interface RequiredByAchivement {
   type: AchivementType;
 }
 
-type RequiredBy = RequiredByBundle | RequiredByAchivement;
+export type RequiredBy = RequiredByBundle | RequiredByAchivement;
 
 export interface Item {
   id: ItemId;

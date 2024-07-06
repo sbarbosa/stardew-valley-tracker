@@ -1,14 +1,14 @@
 import cx from 'clsx';
-import { Box, Group, rem } from "@mantine/core";
+import { Box, Group, Stack, Text, rem } from "@mantine/core";
 import { DragDropContext, Draggable, Droppable } from "@hello-pangea/dnd";
-
 import DragVerticalIcon from 'src/assets/icons/drag-vertical.svg';
+import useListItems from 'src/hooks/use-list-items';
+import { forwardRef, useImperativeHandle } from 'react';
+import { useLang } from 'src/i18n';
+import ItemName from './item-name';
 
 import classes from "./style.module.scss";
-import useListItems from 'src/hooks/use-list-items';
-// import { useTranslation } from 'react-i18next';
-import ItemName from './item-name';
-import { forwardRef, useImperativeHandle } from 'react';
+import ItemRequiredBy from './item-required-by';
 
 export interface ItemListRef {
   resetOrder: () => void;
@@ -16,7 +16,7 @@ export interface ItemListRef {
 
 const ItemList = forwardRef<ItemListRef>((_, ref) => {
   const [items, handlers] = useListItems();
-  // const { i18n } = useTranslation();
+  const lang = useLang();
 
   useImperativeHandle(ref, () => ({
     resetOrder: () => handlers.resetOrder(),
@@ -44,9 +44,19 @@ const ItemList = forwardRef<ItemListRef>((_, ref) => {
                       ref={provided.innerRef}
                       {...provided.draggableProps}
                     >
-                      <Group>
-                        <ItemName name={item.name} icon={item.icon} link />
-                      </Group>
+                      <Stack gap="xs" flex={1}>
+                        <Group gap="md" justify='space-between'>
+                          <ItemName name={item.name} icon={item.icon} link />
+
+                          {item.requiredBy?.length && (
+                            <ItemRequiredBy requiredBy={item.requiredBy} />
+                          )}
+
+                        </Group>
+                        {item.source && (
+                          <Text size='sm'>{item.source[lang]}</Text>
+                        )}
+                      </Stack>
                       <Box {...provided.dragHandleProps} className={classes.drag_handle}>
                         <DragVerticalIcon style={{ width: rem(30), height: "auto" }} stroke="1.5" />
                       </Box>

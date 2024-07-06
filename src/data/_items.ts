@@ -1426,7 +1426,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Red_Mullet": {
@@ -1445,7 +1445,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en el Océano, 6:00 AM - 7:00 PM, Verano e Invierno"
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Herring": {
@@ -1464,7 +1464,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en el Océano, 6:00 AM - 11:00 AM, Primavera e Invierno"
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Catfish": {
@@ -1492,7 +1492,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Pike": {
@@ -1511,7 +1511,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en Ríos (Pueblo y Bosque) y estanque del bosque, a cualquier hora, Verano e Invierno"
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Shad": {
@@ -1538,7 +1538,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Lingcod": {
@@ -1556,7 +1556,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en los ríos (Pueblo y Bosque) y en el lago de la montaña, a cualquier hora, Invierno."
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Halibut": {
@@ -1576,7 +1576,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en el Océano, 6:00 AM - 11:00 AM, 7PM - 2AM, Primavera, Verano e Invierno."
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Tiger_Trout": {
@@ -1601,7 +1601,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Deluxe_Bait": {
@@ -1630,7 +1630,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Smallmouth_Bass": {
@@ -1649,7 +1649,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en el Río (Pueblo) y en el estanque del bosque, a cualquier hora, en cualquier clima. Primavera y Otoño."
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Rainbow_Trout": {
@@ -1668,7 +1668,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en el Río (Pueblo), 6:00 AM - 7:00 PM, Verano."
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Salmon": {
@@ -1686,7 +1686,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en el Río (Pueblo y Bosque), 6:00 AM - 7:00 PM, Otoño."
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Carp": {
@@ -1712,7 +1712,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Bullhead": {
@@ -1733,7 +1733,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Sturgeon": {
@@ -1758,7 +1758,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Dressed_Spinner": {
@@ -1792,7 +1792,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Tuna": {
@@ -1817,7 +1817,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Red_Snapper": {
@@ -1842,7 +1842,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Squid": {
@@ -1860,7 +1860,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en el océano, 6:00 PM - 2:00 AM, Invierno"
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Sea_Cucumber": {
@@ -1879,7 +1879,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en el océano, 6:00 AM - 7:00 PM, Otoño e Invierno"
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Super_Cucumber": {
@@ -1898,7 +1898,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en el océano, 6:00 PM - 2:00 AM, Verano y Otoño. Isla Jengibre (océanos)"
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Tilapia": {
@@ -1923,7 +1923,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Slimejack": {
@@ -1938,7 +1938,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en las Cloacas, a cualquier hora, Todas las estaciones."
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Stingray": {
@@ -1953,7 +1953,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en la Cueva Pirata (Isla Jengibre), a cualquier hora, Todas las estaciones."
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Lionfish": {
@@ -1968,7 +1968,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Océanos de la Isla Jengibre, a cualquier hora, Todas las estaciones."
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Blue_Discus": {
@@ -1983,7 +1983,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Ríos y estanques de la Isla Jengibre, a cualquier hora, Todas las estaciones."
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Goby": {
@@ -1998,7 +1998,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en las cascadas del bosque, a cualquier hora, Todas las estaciones."
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Midnight_Squid": {
@@ -2014,7 +2014,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Paseo en submarino en el Mercado Nocturno durante el Invierno, 5:00 PM - 2:00 AM."
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Spook_Fish": {
@@ -2030,7 +2030,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Paseo en submarino en el Mercado Nocturno durante el Invierno, 5:00 PM - 2:00 AM."
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Blobfish": {
@@ -2046,7 +2046,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Paseo en submarino en el Mercado Nocturno durante el Invierno, 5:00 PM - 2:00 AM."
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Crimsonfish": {
@@ -2062,7 +2062,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en el muelle este de la Playa. Requiere nivel 5 de pesca. A cualquier hora. Verano"
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Angler": {
@@ -2078,7 +2078,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra al norte de JojaMart en el puente de madera. Requiere nivel 3 de pesca. A cualquier hora. Otoño"
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Legend": {
@@ -2095,7 +2095,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en el lago de la montaña. Sólo cuando llueve. Requiere nivel 10 de pesca. A cualquier hora. Primavera"
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Glacierfish": {
@@ -2111,7 +2111,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en el extremo sur de la Isla cabeza de flecha en el Bosque Tizón. Requiere nivel 6 de pesca. A cualquier hora. Invierno"
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Mutant_Carp": {
@@ -2126,7 +2126,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en las Cloacas, a cualquier hora, Todas las estaciones."
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Warp_Totem_Beach": {
@@ -2160,7 +2160,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Perch": {
@@ -2178,7 +2178,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en Ríos (Pueblo y Bosque), 6:00 AM - 7:00 PM, Invierno"
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Bream": {
@@ -2199,7 +2199,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Eel": {
@@ -2225,7 +2225,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Octopus": {
@@ -2243,7 +2243,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en el océano, 6:00 AM - 1:00 PM, Verano. Isla Jengibre (océanos)"
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Glow_Ring": {
@@ -2272,7 +2272,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Crayfish": {
@@ -2293,7 +2293,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Crab": {
@@ -2314,7 +2314,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Cockle": {
@@ -2335,7 +2335,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Mussel": {
@@ -2356,7 +2356,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Shrimp": {
@@ -2377,7 +2377,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Snail": {
@@ -2398,7 +2398,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Periwinkle": {
@@ -2419,7 +2419,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Oyster": {
@@ -2440,7 +2440,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Clam": {
@@ -2461,7 +2461,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Crab_Pot": {
@@ -2494,7 +2494,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Anchovy": {
@@ -2510,7 +2510,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en el Océano, a cualquier hora/clima, Verano y Otoño."
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Ghostfish": {
@@ -2531,7 +2531,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Stonefish": {
@@ -2546,7 +2546,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en las minas (piso 20), A cualquier hora, Todas las estaciones."
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Ice_Pip": {
@@ -2561,7 +2561,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en las minas (piso 60), A cualquier hora, Todas las estaciones."
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Lava_Eel": {
@@ -2576,7 +2576,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en la piscina de lava en Las minas (piso 100) y en la mazmorra del volcán (Isla Jengibre) , A cualquier hora, Todas las estaciones."
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Scorpion_Carp": {
@@ -2591,7 +2591,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en el desierto (nivel de pesca 4 requerido), 6am - 8pm, Todas las estaciones."
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Flounder": {
@@ -2610,7 +2610,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en el océano, 6:00 AM - 8:00 PM, Primavera y Verano. Isla Jengibre (océanos)"
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Midnight_Carp": {
@@ -2629,7 +2629,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en el Lago de la Montaña y en el estanque del bosque, 10:00 PM - 2:00 AM, Otoño e Invierno. Islas Jengibre (estanque y río)"
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Sandfish": {
@@ -2650,7 +2650,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Woodskip": {
@@ -2671,7 +2671,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Dish_O'_The_Sea": {
@@ -3196,7 +3196,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
         quantity: 1,
         quality: "normal"
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Dorado": {
@@ -3212,7 +3212,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en el río del bosque, 6am - 7pm, Verano."
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Albacore": {
@@ -3228,7 +3228,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Se encuentra en el océano, 6am - 11am, 6pm - 2am, Otoño e Invierno."
     },
     requiredBy: [
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Frozen_Geode": {
@@ -3511,7 +3511,7 @@ const ITEMS_MAP: Record<ItemId, Item> = {
           "iridium"
         ]
       },
-      { type: "master_angler" }
+      { type: "Master_Angler" }
     ]
   },
   "Caviar": {
