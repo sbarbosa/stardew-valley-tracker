@@ -1,5 +1,5 @@
 import cx from 'clsx';
-import { Box, Group, Stack, Text, rem } from "@mantine/core";
+import { Box, Checkbox, Group, Stack, Text, rem } from "@mantine/core";
 import { DragDropContext, Draggable, Droppable } from "@hello-pangea/dnd";
 import DragVerticalIcon from 'src/assets/icons/drag-vertical.svg';
 import useListItems from 'src/hooks/use-list-items';
@@ -32,10 +32,10 @@ const ItemList = forwardRef<ItemListRef>((_, ref) => {
         {(provided) => (
           <div {...provided.droppableProps} ref={provided.innerRef}>
 
-            {
-              items.map((item, index) => (
-                <Draggable key={item.id} index={index} draggableId={item.id}>
-                  {(provided, snapshot) => (
+            {items.map((item, index) => (
+              <Draggable key={item.id} index={index} draggableId={item.id}>
+                {(provided, snapshot) => (
+                  <Group className={classes.item_wrapper}>
                     <Box
                       className={cx(classes.item, {
                         [classes.item_dragging]: snapshot.isDragging,
@@ -44,6 +44,17 @@ const ItemList = forwardRef<ItemListRef>((_, ref) => {
                       ref={provided.innerRef}
                       {...provided.draggableProps}
                     >
+                      <Checkbox
+                        variant="outline"
+                        onChange={() => {
+                          const status = item.completed === 'partial'
+                            ? 'total' : (item.completed === 'total' ? undefined : 'partial')
+                          handlers.setCompleted(index, status);
+                        }}
+                        indeterminate={item.completed === 'partial'}
+                        checked={item.completed === 'total'}
+                      />
+
                       <Stack gap="xs" flex={1}>
                         <Group gap="md" justify='space-between'>
                           <ItemName name={item.name} icon={item.icon} link />
@@ -61,10 +72,10 @@ const ItemList = forwardRef<ItemListRef>((_, ref) => {
                         <DragVerticalIcon style={{ width: rem(30), height: "auto" }} stroke="1.5" />
                       </Box>
                     </Box>
-                  )}
-                </Draggable>
-              ))
-            }
+                  </Group>
+                )}
+              </Draggable>
+            ))}
             {provided.placeholder}
           </div>
         )}

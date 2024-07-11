@@ -4,32 +4,35 @@ import { useAtom } from "jotai";
 import { useTranslation } from "react-i18next";
 import ITEMS_MAP from "src/data/_items";
 import filterAtom from "src/data/filter-atom";
-import type { AchivementType, Item, ItemId, Lang, Season, Weather } from "src/data/_types";
+import type { AchivementType, BundleId, Item, ItemId, Lang, Season, Weather } from "src/data/_types";
 import debounce from "debounce";
 import { load, store } from "src/utils/local-storage";
 
-type ExtendedItem = Item & { completed?: boolean; hidden?: boolean };
+type CompletedState = 'partial' | 'total';
+type ExtendedItem = Item & { completed?: CompletedState; hidden?: boolean };
 
 const DEFAULT_ITEM_LIST = Object.values(ITEMS_MAP).filter((item) => !!item.requiredBy)
 
 // Load default order from Storage
 let orderedItemList: ExtendedItem[] = [];
 try {
-  const storedOrder = load<{ id: ItemId; completed?: boolean }[]>("items-list", []);
+  const storedOrder = load<{ id: ItemId; completed?: CompletedState }[]>("items-list", []);
   orderedItemList = storedOrder.length ? storedOrder.map(({ id, completed }) => ({ ...ITEMS_MAP[id], completed })) : DEFAULT_ITEM_LIST;
 } catch (e) {
   console.error(e);
   orderedItemList = DEFAULT_ITEM_LIST;
 }
 
-const storeOrderedList = debounce((list: ExtendedItem[]) => {
+const storeData = debounce((list: ExtendedItem[]) => {
   store("items-list", list.map((item) => ({ id: item.id, completed: item.completed })));
 }, 3000);
 
 type ListOptions = {
   reorder: (args: { from: number; to: number }) => void;
   resetOrder: () => void;
+  setCompleted: (index: number, status?: CompletedState) => void;
 };
+
 
 const useListItems = () => {
   const { i18n } = useTranslation();
@@ -38,7 +41,7 @@ const useListItems = () => {
   const [state, handlers] = useListState<ExtendedItem>(orderedItemList);
 
   useEffect(() => {
-    storeOrderedList(state);
+    storeData(state);
   }, [state]);
 
 
@@ -53,7 +56,8 @@ const useListItems = () => {
           completed: orderedItem?.completed,
         };
       })
-    })
+    }),
+    setCompleted: (index: number, status?: CompletedState) => handlers.setItemProp(index, "completed", status)
   }), []);
 
 
@@ -73,7 +77,15 @@ const useListItems = () => {
         result = true;
       }
 
+      if (!filterByBundle(item, filters.bundles)) {
+        result = true;
+      }
+
       if (filters.weather && !filterByWeather(item.weather, filters.weather)) {
+        result = true;
+      }
+
+      if (filters.hideCompleted && item.completed === 'total') {
         result = true;
       }
 
@@ -117,6 +129,11 @@ const filterBySeason = (season?: Season[], filter?: Season[], lastChange?: boole
 
 const filterByAchievement = (item: Item, achivements: Record<AchivementType, boolean>) => {
   return item.requiredBy?.some((requiredBy) => requiredBy.type === 'bundle' || !!achivements[requiredBy.type]);
+}
+
+const filterByBundle = (item: Item, filter?: BundleId[]) => {
+  if (!filter || !filter.length) return true;
+  return item.requiredBy?.some((requiredBy) => requiredBy.type === 'bundle' && filter.includes(requiredBy.id));
 }
 
 const filterByWeather = (weather?: Weather[], filter?: Weather) => {

@@ -1,8 +1,8 @@
-import { Checkbox, CloseButton, Combobox, Group, Image, Input, InputBase, InputLabel, Stack, Switch, Text, Tooltip, useCombobox } from "@mantine/core";
+import { Checkbox, CloseButton, Combobox, Group, Image, Input, InputBase, InputLabel, MultiSelect, Stack, Switch, Text, Tooltip, useCombobox } from "@mantine/core";
 import debounce from "debounce";
 import { useAtom } from "jotai";
 import { useTranslation } from "react-i18next";
-import { WEATHER_LIST, SEASON_LIST, type Weather } from "src/data/_types";
+import { WEATHER_LIST, SEASON_LIST, BUNDLE_LIST, type Weather, type Season, type BundleId } from "src/data/_types";
 import filterAtom from "src/data/filter-atom";
 import { capitalizeFully } from "src/utils/strings";
 
@@ -11,8 +11,6 @@ import classes from "./style.module.scss";
 export const NavBar = () => {
   const { t } = useTranslation();
   const [filter, setFilter] = useAtom(filterAtom);
-
-  console.log('Filters: ', filter)
 
   const combobox = useCombobox({
     onDropdownClose: () => combobox.resetSelectedOption(),
@@ -41,18 +39,34 @@ export const NavBar = () => {
     );
   }
 
-  const onSeasonChange = debounce((value) => {
+  const onSeasonChange = (value: string[]) => {
     setFilter((data) => {
-      data.season = value;
+      data.season = (value as Season[]);
 
       if (!value || !value.length) {
         data.lastChance = false;
       }
     })
-  }, 300);
+  };
+
+  const onBundleChange = debounce((value: string[]) => {
+    setFilter((data) => {
+      data.bundles = (value as BundleId[]);
+    });
+  }, 400);
 
   return (
     <Stack gap="xl" className={classes.navbar}>
+
+      {/* General */}
+      <Stack>
+        <InputLabel size="md" fw="bold">{t('filter.general')}</InputLabel>
+        <Switch
+          label={t('filter.general.hideCompleted')}
+          checked={!!filter.hideCompleted}
+          onChange={() => setFilter((data) => { data.hideCompleted = !data.hideCompleted })}
+        />
+      </Stack>
 
       {/* SEASON */}
       <Checkbox.Group
@@ -112,17 +126,33 @@ export const NavBar = () => {
         </Combobox.Dropdown>
       </Combobox>
 
+      {/* Bundles */}
+      <Stack>
+        <InputLabel size="md" fw="bold">{t('filter.bundle')}</InputLabel>
+        <MultiSelect
+          placeholder={t('filter.bundle.placeholder')}
+          defaultValue={filter.bundles ?? []}
+          data={BUNDLE_LIST.map(bundle => ({ value: bundle, label: t(`bundle.${bundle}`) }))}
+          onChange={onBundleChange}
+          hidePickedOptions
+          renderOption={({ option }) => (
+            <Group gap="sm" wrap="nowrap">
+              <Image src={`/img/${option.value}.png`} w={20} h={20} radius="sm" />
+              <Text size="sm">{option.label}</Text>
+            </Group>
+          )}
+        />
+      </Stack>
 
       {/* Achivements */}
       <Stack>
-        <InputLabel size="md">{t('filter.achivements.label')}</InputLabel>
+        <InputLabel size="md" fw="bold">{t('filter.achivements.label')}</InputLabel>
         <Switch
           label={t('achivements.Master_Angler')}
           checked={!!filter.achivements.Master_Angler}
           onChange={() => setFilter((data) => { data.achivements.Master_Angler = !data.achivements.Master_Angler })}
         />
       </Stack>
-
 
     </Stack>
   );

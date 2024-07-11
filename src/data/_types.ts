@@ -241,38 +241,41 @@ export interface Item {
   requiredBy?: RequiredBy[];
 }
 
-export type BundleId =
-  | "Spring_Foraging_Bundle"
-  | "Summer_Foraging_Bundle"
-  | "Fall_Foraging_Bundle"
-  | "Winter_Foraging_Bundle"
-  | "Construction_Bundle"
-  | "Exotic_Foraging_Bundle"
-  | "Spring_Crops_Bundle"
-  | "Summer_Crops_Bundle"
-  | "Fall_Crops_Bundle"
-  | "Quality_Crops_Bundle"
-  | "Animal_Bundle"
-  | "Artisan_Bundle"
-  | "River_Fish_Bundle"
-  | "Lake_Fish_Bundle"
-  | "Ocean_Fish_Bundle"
-  | "Night_Fishing_Bundle"
-  | "Crab_Pot_Bundle"
-  | "Specialty_Fish_Bundle"
-  | "Blacksmiths_Bundle"
-  | "Geologists_Bundle"
-  | "Adventurers_Bundle"
-  | "Chefs_Bundle"
-  | "Dye_Bundle"
-  | "Field_Research_Bundle"
-  | "Fodder_Bundle"
-  | "Enchanters_Bundle"
-  | "2500_Bundle"
-  | "5000_Bundle"
-  | "10000_Bundle"
-  | "25000_Bundle"
-  | "The_Missing_Bundle";
+export const BUNDLE_LIST = [
+  "Spring_Foraging_Bundle",
+  "Summer_Foraging_Bundle",
+  "Fall_Foraging_Bundle",
+  "Winter_Foraging_Bundle",
+  "Construction_Bundle",
+  "Exotic_Foraging_Bundle",
+  "Spring_Crops_Bundle",
+  "Summer_Crops_Bundle",
+  "Fall_Crops_Bundle",
+  "Quality_Crops_Bundle",
+  "Animal_Bundle",
+  "Artisan_Bundle",
+  "River_Fish_Bundle",
+  "Lake_Fish_Bundle",
+  "Ocean_Fish_Bundle",
+  "Night_Fishing_Bundle",
+  "Crab_Pot_Bundle",
+  "Specialty_Fish_Bundle",
+  "Blacksmiths_Bundle",
+  "Geologists_Bundle",
+  "Adventurers_Bundle",
+  "Chefs_Bundle",
+  "Dye_Bundle",
+  "Field_Research_Bundle",
+  "Fodder_Bundle",
+  "Enchanters_Bundle",
+  "2500_Bundle",
+  "5000_Bundle",
+  "10000_Bundle",
+  "25000_Bundle",
+  "The_Missing_Bundle"
+] as const;
+export type BundleId = (typeof BUNDLE_LIST)[number];
+
 
 type LocationId =
   | "Crafts_Room"
