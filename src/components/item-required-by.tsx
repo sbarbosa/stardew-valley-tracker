@@ -1,17 +1,23 @@
 import { Group, Image, ActionIcon, Text } from "@mantine/core";
 import { getQualityIcon, type AchivementType, type BundleId, type ItemQuality, type RequiredBy } from "src/data/_types";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 
 import classes from "./style.module.scss";
+import Bundle from "./bundle";
+import Achievement from "./achivement";
 
 interface Props {
   requiredBy: RequiredBy[];
 }
 
 const ItemRequiredBy = ({ requiredBy }: Props) => {
-  const [quantities, requirements] = useMemo(() => {
+  const [selectedBundleId, setSelectedBundleId] = useState<BundleId>();
+  const [selectedAchievementType, setSelectedAchievementType] = useState<AchivementType>();
+
+  const [quantities, bundles, achivements] = useMemo(() => {
     const quantities: Partial<Record<ItemQuality, number>> = {};
-    const requirements: Set<BundleId | AchivementType> = new Set();
+    const bundles: Set<BundleId> = new Set();
+    const achivements: Set<AchivementType> = new Set();
     for (const required of requiredBy) {
       if (required.type === 'bundle') {
         if (Array.isArray(required.quality)) {
@@ -20,13 +26,13 @@ const ItemRequiredBy = ({ requiredBy }: Props) => {
           quantities[required.quality] = (quantities[required.quality] ?? 0) + required.quantity;
         }
 
-        requirements.add(required.id);
+        bundles.add(required.id);
       } else {
-        requirements.add(required.type);
+        achivements.add(required.type);
       }
     }
 
-    return [quantities, Array.from(requirements)];
+    return [quantities, Array.from(bundles), Array.from(achivements)];
   }, [requiredBy]);
 
   return (
@@ -46,13 +52,30 @@ const ItemRequiredBy = ({ requiredBy }: Props) => {
           </Group>
         )
       })}
-      {requirements.map((id) => (
+      {bundles.map((id) => (
         <ActionIcon
           key={id}
-          variant="transparent">
+          variant="transparent"
+          onClick={() => setSelectedBundleId(id)}
+        >
           <Image src={`/img/${id}.png`} w={20} h={20} radius="sm" />
         </ActionIcon>
       ))}
+      {achivements.map((id) => (
+        <ActionIcon
+          key={id}
+          variant="transparent"
+          onClick={() => setSelectedAchievementType(id)}
+        >
+          <Image src={`/img/${id}.png`} w={20} h={20} radius="sm" />
+        </ActionIcon>
+      ))}
+      {selectedBundleId && (
+        <Bundle bundleId={selectedBundleId} onClose={() => setSelectedBundleId(undefined)} />
+      )}
+      {selectedAchievementType && (
+        <Achievement achievementType={selectedAchievementType} onClose={() => setSelectedBundleId(undefined)} />
+      )}
     </Group>
   )
 };
