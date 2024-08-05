@@ -1,11 +1,11 @@
-import { type CardProps, Group, Text, Image, Modal, Stack, rem } from "@mantine/core";
+import { Group, Text, Image, Modal, Stack, rem } from "@mantine/core";
 import type { BundleId } from "src/data/_types";
 import ItemName from "./item-name";
 import ItemIcon from "./item-icon";
 import BUNDLE_MAP from "src/data/_bundles";
 import ITEMS_MAP from "src/data/_items";
 
-interface Props extends CardProps {
+interface Props {
   bundleId: BundleId;
   onClose: () => void;
 }
