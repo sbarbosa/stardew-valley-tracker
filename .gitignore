@@ -3,6 +3,7 @@
 # dependencies
 .yarn/unplugged
 .yarn/build-state.yml
+node_modules/.cache
 
 # testing
 /coverage
