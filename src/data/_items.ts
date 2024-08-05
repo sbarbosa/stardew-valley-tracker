@@ -2504,10 +2504,10 @@ const ITEMS_MAP: Record<ItemId, Item> = {
       es: "Anchoa"
     },
     icon: "/img/36px-Anchovy.png",
-    season: ["summer", "fall"],
+    season: ["spring", "fall"],
     source: {
-      en: "Found in the Ocean, anytime, any weather, Summer and Fall.",
-      es: "Se encuentra en el Océano, a cualquier hora/clima, Verano y Otoño."
+      en: "Found in the Ocean, anytime, any weather, Spring and Fall.",
+      es: "Se encuentra en el Océano, a cualquier hora/clima, primavera y Otoño."
     },
     requiredBy: [
       { type: "Master_Angler" }
