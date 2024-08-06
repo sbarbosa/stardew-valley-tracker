@@ -2,6 +2,8 @@ import { Group, Image, ActionIcon, Text } from "@mantine/core";
 import { getQualityIcon, type AchivementType, type BundleId, type ItemQuality, type RequiredBy } from "src/data/_types";
 import { useMemo, useState } from "react";
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 import classes from "./style.module.scss";
 import Bundle from "./bundle";
 import Achievement from "./achivement";
@@ -43,7 +45,7 @@ const ItemRequiredBy = ({ requiredBy }: Props) => {
           <Group key={quality} gap={0}>
             {quality !== 'normal' && (
               <div className={classes.required_quality}>
-                <Image src={getQualityIcon(quality)} alt="" width={18} height={18} />
+                <Image src={`${BASE_URL}${getQualityIcon(quality)}`} alt="" width={18} height={18} />
               </div>
             )}
             <Text size="xs">
@@ -58,7 +60,7 @@ const ItemRequiredBy = ({ requiredBy }: Props) => {
           variant="transparent"
           onClick={() => setSelectedBundleId(id)}
         >
-          <Image src={`/img/${id}.png`} w={20} h={20} radius="sm" />
+          <Image src={`${BASE_URL}/img/${id}.png`} w={20} h={20} radius="sm" />
         </ActionIcon>
       ))}
       {achivements.map((id) => (
@@ -67,7 +69,7 @@ const ItemRequiredBy = ({ requiredBy }: Props) => {
           variant="transparent"
           onClick={() => setSelectedAchievementType(id)}
         >
-          <Image src={`/img/${id}.png`} w={20} h={20} radius="sm" />
+          <Image src={`${BASE_URL}/img/${id}.png`} w={20} h={20} radius="sm" />
         </ActionIcon>
       ))}
       {selectedBundleId && (

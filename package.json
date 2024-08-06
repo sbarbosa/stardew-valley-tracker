@@ -3,14 +3,12 @@
   "private": false,
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://sbarbosa.github.io/stardew-valley-tracker",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "biome lint src",
     "preview": "vite preview",
-    "predeploy": "yarn run dist",
-    "deploy": "gh-pages -d dist"
+    "deploy": "yarn build && gh-pages -d dist"
   },
   "dependencies": {
     "@hello-pangea/dnd": "^16.6.0",

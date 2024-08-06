@@ -15,6 +15,7 @@ import "./i18n";
 
 // Set up a Router instance
 const router = createRouter({
+  basepath: import.meta.env.BASE_URL ?? "/",
   routeTree,
   context: {
     store,

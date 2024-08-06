@@ -6,6 +6,8 @@ import { WEATHER_LIST, SEASON_LIST, BUNDLE_LIST, type Weather, type Season, type
 import filterAtom from "src/data/filter-atom";
 import { capitalizeFully } from "src/utils/strings";
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 import classes from "./style.module.scss";
 
 export const NavBar = () => {
@@ -22,7 +24,7 @@ export const NavBar = () => {
     const imgName = capitalizeFully(weather.replace("_", " ")).replace(" ", "");
     return (
       <Group>
-        <Image src={`/img/Weather_${imgName}.gif`} w={20} h={20} />
+        <Image src={`${BASE_URL}/img/Weather_${imgName}.gif`} w={20} h={20} />
         <Text size="sm" flex={1}>{t(`weather.${weather}`)}</Text>
         {claseButton && (
           <CloseButton
@@ -137,7 +139,7 @@ export const NavBar = () => {
           hidePickedOptions
           renderOption={({ option }) => (
             <Group gap="sm" wrap="nowrap">
-              <Image src={`/img/${option.value}.png`} w={20} h={20} radius="sm" />
+              <Image src={`${BASE_URL}/img/${option.value}.png`} w={20} h={20} radius="sm" />
               <Text size="sm">{option.label}</Text>
             </Group>
           )}
