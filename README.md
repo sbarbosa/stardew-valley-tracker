@@ -14,4 +14,4 @@ You can see it in action here: [https://sbarbosa.github.io/stardew-valley-tracke
 
 1. Install all dependencies: `yarn install`
 2. Start the development server `yarn dev`
-3. Open `http://localhost:5173` in your preferred browser
+3. Open `http://localhost:5173/stardew-valley-tracker/` in your preferred browser

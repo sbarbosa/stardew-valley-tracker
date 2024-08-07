@@ -13,6 +13,8 @@ import { store } from './data';
 // Initializing Internationalization
 import "./i18n";
 
+import '@mantine/tiptap/styles.css';
+
 // Set up a Router instance
 const router = createRouter({
   basepath: import.meta.env.BASE_URL ?? "/",

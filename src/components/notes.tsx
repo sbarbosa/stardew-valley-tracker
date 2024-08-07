@@ -1,0 +1,110 @@
+import debounce from "debounce";
+import { Box, Button, Dialog, Group, ScrollArea } from "@mantine/core";
+import { RichTextEditor, Link } from '@mantine/tiptap';
+import Highlight from '@tiptap/extension-highlight';
+import StarterKit from '@tiptap/starter-kit';
+import Underline from '@tiptap/extension-underline';
+import TextAlign from '@tiptap/extension-text-align';
+import Superscript from '@tiptap/extension-superscript';
+import SubScript from '@tiptap/extension-subscript';
+import { useEditor } from "@tiptap/react";
+import { useTranslation } from "react-i18next";
+import { readLocalStorageValue, useDisclosure, useLocalStorage } from "@mantine/hooks";
+
+import classes from "./style.module.scss";
+
+const CONTENT = readLocalStorageValue({ key: 'notes' }) || '';
+
+interface Props {
+  className?: string;
+}
+
+const Notes = ({ className }: Props) => {
+  const { t } = useTranslation();
+  const [opened, { toggle, close }] = useDisclosure(false);
+  const [_, setValue] = useLocalStorage({
+    key: 'notes',
+  });
+
+  const storeValue = debounce((content: string) => {
+    setValue(content);
+  }, 2000);
+
+  const editor = useEditor({
+    extensions: [
+      StarterKit,
+      Underline,
+      Link,
+      Superscript,
+      SubScript,
+      Highlight,
+      TextAlign.configure({ types: ['heading', 'paragraph'] }),
+    ],
+    content: CONTENT,
+    onUpdate: ({ editor }) => {
+      storeValue(editor.getHTML());
+    },
+  });
+
+  return (
+    <Box className={className}>
+      <Group justify="center">
+        <Button onClick={toggle}>{t(opened ? 'notes.close' : 'notes.open')}</Button>
+      </Group>
+
+      <Dialog className={classes.notes_dialog} opened={opened} onClose={close} radius="md">
+        <RichTextEditor editor={editor} >
+          <RichTextEditor.Toolbar sticky stickyOffset={60}>
+            <RichTextEditor.ControlsGroup>
+              <RichTextEditor.Bold />
+              <RichTextEditor.Italic />
+              <RichTextEditor.Underline />
+              <RichTextEditor.Strikethrough />
+              <RichTextEditor.ClearFormatting />
+              <RichTextEditor.Highlight />
+              <RichTextEditor.Code />
+            </RichTextEditor.ControlsGroup>
+
+            <RichTextEditor.ControlsGroup>
+              <RichTextEditor.H1 />
+              <RichTextEditor.H2 />
+              <RichTextEditor.H3 />
+              <RichTextEditor.H4 />
+            </RichTextEditor.ControlsGroup>
+
+            <RichTextEditor.ControlsGroup>
+              <RichTextEditor.Blockquote />
+              <RichTextEditor.Hr />
+              <RichTextEditor.BulletList />
+              <RichTextEditor.OrderedList />
+              <RichTextEditor.Subscript />
+              <RichTextEditor.Superscript />
+            </RichTextEditor.ControlsGroup>
+
+            <RichTextEditor.ControlsGroup>
+              <RichTextEditor.Link />
+              <RichTextEditor.Unlink />
+            </RichTextEditor.ControlsGroup>
+
+            <RichTextEditor.ControlsGroup>
+              <RichTextEditor.AlignLeft />
+              <RichTextEditor.AlignCenter />
+              <RichTextEditor.AlignJustify />
+              <RichTextEditor.AlignRight />
+            </RichTextEditor.ControlsGroup>
+
+            <RichTextEditor.ControlsGroup>
+              <RichTextEditor.Undo />
+              <RichTextEditor.Redo />
+            </RichTextEditor.ControlsGroup>
+          </RichTextEditor.Toolbar>
+
+          <ScrollArea type="auto" classNames={{ viewport: classes.editor_content }}>
+            <RichTextEditor.Content />
+          </ScrollArea>
+        </RichTextEditor>
+      </Dialog>
+    </Box>)
+}
+
+export default Notes;

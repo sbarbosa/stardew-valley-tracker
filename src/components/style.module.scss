@@ -57,3 +57,12 @@
     }
   }
 }
+
+.notes_dialog {
+  width: 70vw;
+  max-height: 50vh;
+
+  .editor_content {
+    max-height: 40vh;
+  }
+}
